@@ -1,0 +1,749 @@
+MCDONALD'S — ABOUT OUR FOOD
+Page-by-page text summary
+Prepared October 6, 2026 (America/Los_Angeles)
+
+SCOPE AND READING NOTES
+
+This document covers 26 accessible pages: the supplied landing page and 25
+pages discovered beneath https://www.mcdonalds.com/us/en-us/about-our-food/.
+Discovery followed the section's landing pages, supplier and expert profiles,
+related-page links, and supplementary web searches. URLs are deduplicated;
+query-string variants are not counted separately.
+
+Each entry contains the page's visible main title, source URL, a heading
+outline, and an original summary of its substantive readable content.
+Heading outlines are paraphrased rather than a verbatim heading inventory.
+Summaries describe McDonald's statements; they are not independent verification
+of the company's sourcing, nutrition, sustainability, or historical claims.
+Historical dates remain attached to the claims that use them.
+
+Coverage is complete for the accessible pages discovered in this review, but
+the site's complete URL inventory could not be verified: its sitemap was not
+retrievable. Unlinked or unindexed pages may exist. The nutrition calculator
+and questions interface did not expose their dynamically loaded results in
+the retrieved text. Videos, image-only text, and downloadable files were not
+transcribed. These limits are documented rather than filled with assumptions.
+
+The boundary excludes /product/, /full-menu/, /faq/, corporate.mcdonalds.com,
+other countries and languages, external sites, and linked PDFs outside the
+specified path. Related destinations are identified where relevant.
+
+Shared site navigation and notices are summarized once at the end.
+
+======================================================================
+01. About Our Food
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food.html
+
+Heading outline: Food overview; quality commitments; ingredients; food
+principles; nutrition tool; food specialists; fresh beef; children's meals;
+range of options.
+
+Summary:
+The landing page introduces ingredient, dietary, calorie, and nutrition
+information. It presents a more balanced Happy Meal and cooked-to-order
+Quarter Pounder beef as examples of menu development. Eight cards lead to
+quality and sourcing policies, ingredient information, food philosophy, the
+nutrition calculator, food experts, the fresh-beef lineup, children's
+nutrition, and menu variety. Experts include chefs, dietitians, and suppliers.
+The quality card emphasizes changes to preparation and ingredients; the
+ingredients card invites closer examination of food components.
+
+Fresh-beef claims concern Quarter Pounder patties, not every burger. The
+quarter-pound weight is four ounces before cooking. Availability is at
+participating restaurants, mainly in the contiguous United States, and
+excludes Alaska, Hawaii, and U.S. territories.
+
+======================================================================
+02. Our Food Philosophy
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/our-food-philosophy.html
+
+Heading outline: Chicken nuggets; quality improvements; nutrition tool;
+ingredient information; supplier profiles; customer food questions.
+
+Summary:
+McDonald's frames its food principles around safety, quality, choice, and
+responsible production. Examples include pure beef patties seasoned with salt
+and pepper, freshly cracked eggs in Egg McMuffins, U.S. Filet-O-Fish whitefish
+from managed wild fisheries, and white-meat chicken nuggets. It describes
+continued menu improvement as a response to customer priorities.
+
+The nugget card states that Chicken McNuggets contain no artificial colors,
+preservatives, or flavors. Other cards direct readers to quality commitments,
+the nutrition calculator, ingredient information, supplier stories, and food
+questions. The nugget link opens a product page outside this document's path
+boundary. The customer-question link opens the general FAQ section, also
+outside the boundary. This page is primarily an overview and navigation hub,
+not a complete ingredient list for every menu item.
+
+======================================================================
+03. Our Commitment to Quality
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/our-food-philosophy/commitment-to-quality.html
+
+Heading outline: Antibiotics; beef sustainability; preparation; simpler
+ingredients; cage-free eggs; coffee sourcing; rbST-free milk; children's
+meals; fisheries; menu changes; sow housing; broiler welfare; nutrition access.
+
+Summary:
+- Antibiotics: rejects routine medically important growth-promotion and
+  habitual preventive use, while allowing veterinarian-directed treatment.
+  U.S. chicken milestone: 2016; beef policy: 2018, ten markets, over 85% of supply.
+- Beef: seeks environmental, farmer, and welfare improvements.
+- Preparation: cooked-to-order fresh Quarter Pounders; toasted buns.
+- Ingredients: butter, cracked eggs, and 2018 classic-burger changes;
+  pickles retain an artificial preservative.
+- Eggs: historical 2025 target, 60% progress, 1.6 billion sourced in 2020.
+- Coffee: 99.9% sustainable sourcing in 2022 through certification or approved
+  programs; high-deforestation-risk origins require Rainforest Alliance.
+- Milk: no rbST treatment; states no significant treated/untreated difference.
+- Children: broader balanced choices; fish: managed wild fisheries, MSC pollock.
+- Menu: continued evolution.
+- Pork: 91% conformity in 2022, nearly 175 million pounds; delays, revised 2024 target.
+- Chicken: eight commitments cover advice, measurement, technology,
+  enrichment, trials, stunning, audits, and expansion; historical 2024 target.
+- Nutrition: calculator, ordering websites, and apps.
+
+Dates describe the page's historical statements, not verified current completion.
+
+======================================================================
+04. What’s In Your Food
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/whats-in-your-food.html
+
+Heading outline: Ingredient quality introduction; suppliers; experts;
+menu options; children's nutrition; food principles; nutrition tool.
+
+Summary:
+This ingredient hub gives two examples of quality claims: beef patties made
+entirely from beef without preservatives, fillers, or additives, and selected
+apple varieties such as Gala and Pink Lady. It then links to information
+about the people supplying ingredients, the experts developing food,
+the variety of menu choices, Happy Meal nutrition, and food philosophy.
+
+The philosophy card favors simplicity in food preparation. The nutrition
+calculator is presented as a way to make informed choices. The page itself
+does not enumerate every ingredient or allergen in every product; its
+substantive purpose is to introduce the ingredient-information section and
+connect readers to more specific resources.
+
+======================================================================
+05. Nutrition Calculator
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/nutrition-calculator.html
+
+Heading outline: Nutrition calculator; daily-value footnotes; ingredient,
+allergy, and nutrition qualifications.
+
+Summary:
+The tool is intended to show calories, carbohydrates, protein, and other
+product nutrition data. Its interactive product results were not present
+in the retrieved text.
+
+The accompanying note identifies nine allergens: eggs, dairy, wheat, soy,
+peanuts, tree nuts, fish, shellfish, and sesame. Shared preparation spaces,
+equipment, and utensils can allow allergen contact despite precautions.
+Customers are directed to ingredient information, medical advice for dietary
+questions, and contact forms.
+
+Daily values assume a 2,000-calorie diet, with individual needs varying;
+percentages and reference intakes use unrounded values. Nutrition data come
+from accredited laboratory tests, published resources, and suppliers, using
+standard formulations and serving sizes. Reported values are averages rounded
+under FDA rules. Preparation, portion sizes, suppliers, location, season,
+testing, and recipe changes can alter actual values. Fountain-drink figures
+assume standard fill levels with ice; self-service fountain signs provide
+figures without ice. Beverage sizes can vary by market.
+
+The page makes no U.S. Halal, Kosher, other religious-compliance, vegetarian,
+vegan, or gluten-free claims. Its general information note is dated January
+2022 unless otherwise indicated.
+
+======================================================================
+06. Try Our Fresh Beef* Lineup
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/fresh-beef.html
+
+Heading outline: Fresh-beef positioning; bacon version; deluxe version;
+standard cheese version; double version.
+
+Summary:
+The page describes Quarter Pounder patties as entirely fresh beef, cooked
+when ordered on a flat grill and seasoned with salt and pepper.
+
+The standard cheese burger includes two cheese slices, slivered onions,
+pickles, ketchup, and mustard on a toasted sesame bun. The bacon version adds
+thick-cut Applewood-smoked bacon to beef, two American-cheese slices, onions,
+and pickles on a sesame bun. The deluxe version adds shredded lettuce, three
+Roma-tomato slices, and mayonnaise, alongside cheese, onions, and pickles.
+The double version uses two fresh patties, with two cheese slices and the
+standard onion, pickle, ketchup, and mustard toppings.
+
+The stated four-ounce weight is before cooking, and applies to each patty
+in the double burger. Fresh beef is available at most contiguous-U.S.
+restaurants, excluding Alaska, Hawaii, and U.S. territories. Product links
+lead outside the path boundary. Ordering guidance points to restaurant
+search, app pickup, and delivery. Delivery is available at participating
+restaurants, may cost more, and may involve additional fees.
+
+======================================================================
+07. Kids’ Nutrition
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/whats-in-your-food/kids-nutrition.html
+
+Heading outline: Children's meals introduction; balanced meal development;
+impact of nutrition initiatives.
+
+Summary:
+McDonald's describes adapting Happy Meals to different families and making
+balanced choices more accessible. U.S. changes began in 2004 with apple
+dippers, milk, and apple juice in selected markets; apple slices became
+automatic inclusions in 2012. It also describes removing artificial
+preservatives from nuggets and hamburgers, with a pickle exception.
+
+Reduced-sugar low-fat chocolate milk arrived in early 2020. The page claims
+25% less sugar than leading quick-service competitors: 14 grams versus 23.
+
+Work with the Alliance for a Healthier Generation began in 2013. Removing
+soda from U.S. Happy Meal menu boards in 2014 is associated on the page with
+a 15% increase in orders with milk, water, or juice drinks from 2013 to 2018.
+Global goals were announced in 2018. The page reports over 2.5 billion
+qualifying items sold since 2018 across 20 markets: Argentina, Australia,
+Austria, Brazil, Canada, China, France, Germany, Hong Kong, Italy, Japan,
+Netherlands, Poland, Russia, Spain, Sweden, Switzerland, Taiwan, U.K., and U.S.
+Qualifying categories include produce, low-fat dairy, water, lean protein,
+and whole grains. The reporting endpoint is unspecified.
+
+======================================================================
+08. Variety of Choices
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/whats-in-your-food/variety-of-choices.html
+
+Heading outline: Fruit; whole grains; chicken; pork; beef; fish; eggs;
+potatoes; milk; coffee.
+
+Summary:
+- Fruit: apple slices supply about one-quarter cup; oatmeal contains apples,
+  dried cranberries, and raisins.
+- Grains: Fruit & Maple Oatmeal provides two whole-grain servings.
+- Chicken: nuggets are described as lacking artificial colors, flavors,
+  and preservatives; the McCrispy sandwich is another option.
+- Pork: sausage appears in biscuits and McGriddles.
+- Beef: entirely beef patties without fillers, additives, or preservatives,
+  prepared using the company's searing method.
+- Fish: wild Alaska pollock for Filet-O-Fish, described as traceable to a
+  sustainable fishery and Marine Stewardship Council certified.
+- Eggs: Egg McMuffins use freshly cracked eggs; a historical 2025 U.S.
+  cage-free sourcing target appears.
+- Potatoes: fries begin with selected potatoes and have zero grams of
+  trans fat per labeled serving.
+- Milk: 1% white milk or reduced-sugar low-fat chocolate milk; the latter
+  is advertised as 25% lower in sugar, with 14 grams versus 22 grams cited.
+- Coffee: sustainable sourcing and espresso with Rainforest Alliance certification.
+
+Product links are outside scope; the egg goal is historical.
+
+======================================================================
+09. Meet Our Food Experts
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts.html
+
+Heading outline: Culinary specialists; registered nutrition professionals;
+ingredient suppliers.
+
+Summary:
+This hub introduces food experts as people responsible for innovation and
+care in the company's kitchens. Its three cards distinguish chefs who
+develop tastes and products, registered dietitian nutritionists who
+contribute nutrition expertise, and suppliers who provide ingredients.
+
+Each card links to a dedicated directory: the chef page, the dietitian page,
+or supplier stories. The hub contains no individual biographies, numerical
+nutrition data, or detailed sourcing policies; those appear in its linked
+pages and are summarized in the following entries.
+
+======================================================================
+10. Our Chefs
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-chefs.html
+
+Heading outline: People developing the menu; Chad Schafer; Mike Lingo.
+
+Summary:
+The chef directory presents culinary staff as collaborators with the
+company's dietitians in improving food quality and creating menu innovations.
+It links to two interviews: Chef Chad Schafer and Chef Mike Lingo.
+
+The retrieved directory provides names and profile links rather than
+extended biographies. Its dietitian link connects back to the nutrition
+team. Both linked English-language interviews are included below.
+
+======================================================================
+11. Our Dietitians
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-nutritionists.html
+
+Heading outline: Informed eating choices; team introductions; Emily Bowman;
+Denise Abts; favorite products; quality work; chefs; suppliers.
+
+Summary:
+McDonald's describes involving suppliers, chefs, and registered dietitian
+nutritionists in ingredient and menu decisions. The dietitians' stated role
+includes helping customers understand food composition and make informed
+choices.
+
+Emily Bowman is listed with MBA, RDN, and LDN credentials. Her profile
+emphasizes explaining ingredients to families and communities, working
+with suppliers on ingredient statements, and answering allergy questions.
+She considers providing ingredient, allergen, and nutrition information
+especially rewarding. Her favorite listed item is French Vanilla Iced Coffee.
+
+Denise Abts is listed with RDN and LDN credentials. She emphasizes giving
+customers useful knowledge and explaining menu quality, drawing on both
+her professional perspective and her experience as a mother. Her favorite
+listed item is the hamburger.
+
+Three further cards connect the team profiles to quality commitments,
+the chef directory, and ingredient suppliers. Favorite-product links lead
+to product pages outside this document's boundary.
+
+======================================================================
+12. Chef Chad Schafer
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-chefs/chef-chad-schafer.html
+
+Heading outline: Career start; training and experience; food principles;
+motivation and alternate career; daily work; menu priorities; customer
+questions; team surprises; long-term aims; favorite item; home cooking.
+
+Summary:
+Schafer's first paid restaurant position was grilling at Applebee's. He
+graduated at the top of his Culinary Institute of America class. His account
+describes ten years in independent restaurants, followed by ten years as
+a corporate chef at Schreiber, Givaudan Flavors and Fragrances, and Cargill.
+
+His approach favors simplicity, enjoyment in cooking, and respect for
+ingredients and the work behind them. Coworkers are a major motivation;
+he views McDonald's scale as an opportunity to influence perceptions of
+food and the people making it. Without cooking, he imagines still seeking
+his purpose.
+
+Daily work resembles other restaurant culinary work, but decisions affect
+more people. He is excited by quality improvements and attention to
+customer preferences. Customers often ask about discontinued favorites.
+He thinks the existence and diversity of the culinary team surprise people.
+His long-term aim is continued improvement through menu evolution.
+His favorite menu item is whatever the team is developing. At home,
+he enjoys making food that visibly pleases friends and family.
+
+======================================================================
+13. Chef Mike Lingo
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-food-experts/our-chefs/chef-mike-lingo.html
+
+Heading outline: Career start; education and development work; food
+principles; motivation and alternate career; daily tasks; menu direction;
+customer questions; culinary team; favorite item; home cooking.
+
+Summary:
+Lingo began at age 14 in his father's grocery-store deli. After high school
+he studied culinary arts in Cedar Rapids and worked in an Italian
+restaurant. Encouragement from its chef led him to the Culinary Institute
+of America in New York, where he also worked at Terrapin in Rhinebeck.
+He later entered research and development in Iowa and enrolled in food
+science at Iowa State University.
+
+He values enjoyable food, shared meals, creativity, and experimentation.
+At McDonald's, menu rollout requires coordinating many restaurants and
+suppliers, maintaining consistent quality, and ensuring sufficient
+ingredient supplies. Successful launches are therefore rewarding.
+An alternative career would involve design, architecture, landscaping,
+or interiors.
+
+Daily work can involve creating sandwiches, developing supplier ingredients,
+or presenting concepts to leadership. He welcomes a return to the
+company's roots. People often propose menu additions; he thinks the number
+of trained chefs would surprise them. His favorite product is the Big Mac.
+For family and friends, he enjoys holiday roasts, braises, stews, and other
+comfort foods.
+
+======================================================================
+14. McDonald’s Food Suppliers
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers.html
+
+Heading outline: Supplier introduction; beef; meat and fish; fishing;
+three potato profiles; apples; lettuce; coffee; two dairies.
+
+Summary:
+This directory introduces responsibly grown ingredients and the people
+supplying them. Eleven cards link to individual profiles:
+- Lopez Foods: USDA-inspected beef for U.S. restaurant patties.
+- Keystone Foods: several ingredients, including some nugget chicken.
+- Kenny Longaker: fish supply.
+- Frank Martinez: Russet Burbank potatoes for fries.
+- Jenn Bunger: potato farming with her family.
+- 100 Circle Farms: potato quality assessed through uniformity.
+- Mike Dietrich: ripe apples picked by a family orchard.
+- Dirk Giannini: lettuce grown on a family farm.
+- Gaviña Gourmet Coffee: coffee blending for McCafé drinks.
+- Hildebrandt Farms: dairy supply in Illinois and Wisconsin.
+- Milking R Dairy: milk for Florida soft serve.
+
+The apple card uses Mike Dietrich's name, while the linked page is titled
+Leo Dietrich & Sons. Hildebrandt's card broadly mentions milk; its detailed
+profile specifically describes milk for soft serve. These are differences
+in page presentation, not separate suppliers or duplicate profiles.
+
+======================================================================
+15. Lopez Foods
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/lopez-foods.html
+
+Heading outline: Supplier story; Keystone; 100 Circle Farms; Dietrich
+orchard; balanced menu choices; supplier directory.
+
+Summary:
+The page introduces a beef supplier with a relationship to McDonald's
+lasting more than 30 years, as described in the profile. CEO Ed Sanchez
+attributes the company's quality work to a family-like atmosphere and
+cooperation between management and production employees.
+
+The readable story is brief and functions as an introduction to a supplier
+testimonial. Related cards link to Keystone Foods, 100 Circle Farms,
+and Leo Dietrich & Sons. Additional cards point to balanced menu options
+and the supplier directory. Two cards about quality and variety repeat
+the same message and destination; they do not introduce additional food
+claims. A return link leads to the main supplier directory.
+
+======================================================================
+16. Keystone Foods
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/keystone-foods.html
+
+Heading outline: Company history; 100 Circle Farms; Dietrich orchard;
+Longaker fish supply; food questions; balanced choices; supplier directory.
+
+Summary:
+The story traces Keystone to a small Philadelphia family beef business.
+During the 1960s, Herb Lotman developed an individually quick-frozen patty
+process to preserve taste and texture, then introduced it to McDonald's.
+The resulting contract supported Keystone's growth. The page describes
+operations supplying food to 13 countries across multiple regions and
+continued worldwide use of the freezing method.
+
+In the early 1970s, Keystone and McDonald's developed consolidated
+distribution so restaurants could receive operating supplies in a single
+customized delivery. They later collaborated on Chicken McNuggets,
+creating substantial demand for boneless chicken.
+
+The profile reports annual U.S. supply of more than 150 million pounds
+of beef, 300 million pounds of chicken, and 15 million pounds of fish.
+It says Keystone meets McDonald's welfare, safety, and quality standards
+beyond USDA requirements. These figures have no explicit current
+reporting year in the readable story.
+
+Related cards lead to potato, apple, and fish profiles, food questions,
+balanced choices, and the supplier directory.
+
+======================================================================
+17. Kenny Longaker
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/fish-kenny-longaker.html
+
+Heading outline: Fishing and sustainability story.
+
+Summary:
+Longaker departs Dutch Harbor aboard the Defender to catch wild Alaska
+pollock in the Bering Sea for Filet-O-Fish. The page describes pollock as
+fast-growing and connects careful population management with the fishery's
+long-term availability.
+
+His account says catches are filleted and frozen approximately 24 to 72
+hours after capture to meet the company's quality expectations.
+McDonald's associates the fish with sustainable sourcing through the
+Alaska Seafood Marketing Institute and Marine Stewardship Council
+certification. An external link directs readers to MSC information.
+
+The main text focuses on the fishing process, prompt handling, and
+sustainability standards. A return link leads to the supplier directory;
+the product and certification links are outside this document's boundary.
+
+======================================================================
+18. Frank Martinez
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/potatoes-frank-martinez.html
+
+Heading outline: Farming story; Jenn Bunger; Gaviña coffee; Lopez Foods;
+food questions; balanced choices; supplier directory.
+
+Summary:
+Martinez grew up traveling with parents who worked harvesting crops.
+The story describes his eventual success owning farmland in Warden,
+Washington, and growing Russet Burbank potatoes for McDonald's fries.
+It links his perseverance to advice from his father about overcoming
+fear and building something durable.
+
+Martinez presents pride in farming and potato quality as foundations
+of good fries. The readable account is a personal profile rather than
+a technical description of irrigation, fertilizer, or processing.
+
+Related cards direct readers to fellow potato farmer Jenn Bunger,
+Gaviña Gourmet Coffee, and Lopez Foods. Further links lead to food
+questions, balanced menu choices, and the supplier directory. The fries
+product link goes outside the specified path.
+
+======================================================================
+19. Jenn Bunger
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/potatoes-jenn-bunger.html
+
+Heading outline: Farming story; Gaviña coffee; Lopez Foods; Keystone;
+balanced choices; supplier directory.
+
+Summary:
+Bunger grew up on a farm in Pasco, Washington, helping during summers.
+Although her father encouraged her to retain her registered-nursing job,
+she chose to become a full-time potato farmer and continue the family's
+work supplying potatoes for McDonald's fries.
+
+She describes satisfaction in watching her work grow and emphasizes both
+potato production and meeting the company's quality expectations.
+The page presents farming as a personally meaningful career choice.
+
+Related supplier cards link to Gaviña Gourmet Coffee, Lopez Foods,
+and Keystone Foods. Additional cards connect to balanced menu options
+and the main supplier directory. The two quality/variety cards repeat
+the same general message. A product link points to fries outside the
+document's path boundary.
+
+======================================================================
+20. 100 Circle Farms
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/100-circle-farms.html
+
+Heading outline: Potato-production story; Dietrich orchard; Longaker
+fishing; Giannini lettuce; food questions; balanced choices; supplier directory.
+
+Summary:
+The profile describes potatoes grown in very large circular fields that
+can be seen from space. Processor Lamb Weston cuts the potatoes into
+fries at a stated speed of 70 miles per hour.
+
+Troy Grimes, identified as Lamb Weston's director of farm and dairy
+operations, gives a harvesting range of approximately 1,000 to 2,400
+tons of potatoes daily, with most intended for McDonald's fries.
+The profile does not give a reporting year for these operational figures.
+
+Related cards link to Leo Dietrich & Sons, Kenny Longaker, and Dirk
+Giannini, connecting potato production with apple, fish, and lettuce
+stories. Further links lead to food questions, balanced menu choices,
+and the supplier directory. The fries product link is outside scope.
+
+======================================================================
+21. Leo Dietrich & Sons
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/apples-mike-dietrich.html
+
+Heading outline: Orchard story; Longaker fishing; Giannini lettuce;
+Martinez potatoes; balanced choices; supplier directory.
+
+Summary:
+The family orchard in Conklin, Michigan, occupies land held since the
+1850s. The profile says workers hand-pick apples at peak ripeness,
+harvesting about 10,000 apples daily during harvest season.
+
+Honeybees pollinate the trees, while pheromone traps reduce reliance
+on pesticides. Some of the resulting apples become McDonald's apple
+slices, including those used in Happy Meals. Mike Dietrich emphasizes
+meeting the company's standards and supplying apples that taste good.
+
+The story does not claim that all McDonald's apples come from this
+orchard. Related profiles cover Kenny Longaker, Dirk Giannini,
+and Frank Martinez. Balanced-choice cards and the supplier-directory
+link repeat navigation found elsewhere. The apple and Happy Meal
+product links lead outside the specified section.
+
+======================================================================
+22. Dirk Giannini
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/lettuce-dirk-giannini.html
+
+Heading outline: Lettuce-farming story; Martinez potatoes; Bunger
+potatoes; Gaviña coffee; food questions; balanced choices; supplier directory.
+
+Summary:
+Giannini is described as a fourth-generation farmer working in the
+Salinas Valley. At the time described, he had been producing lettuce
+for more than 14 years. He emphasizes protecting the land because it
+supports the family's livelihood.
+
+The profile connects his grandfather with early iced-railcar lettuce
+shipments and recounts that connection as an explanation for the
+Iceberg lettuce name. It says lettuce is harvested, rinsed three times,
+and delivered to McDonald's within days. Giannini stresses freshness,
+daily work, and attention to detail.
+
+The story refers to lettuce for McDonald's salads; that historical
+wording is not confirmation that salads are currently sold locally.
+Related cards lead to Frank Martinez, Jenn Bunger, and Gaviña Gourmet
+Coffee. Other links point to food questions, balanced menu choices,
+and the supplier directory.
+
+======================================================================
+23. Gaviña Gourmet Coffee
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/gavina-gourmet-coffee.html
+
+Heading outline: Family coffee business; Lopez Foods; Keystone;
+100 Circle Farms; balanced choices; supplier directory.
+
+Summary:
+The profile describes Don Francisco Gaviña leaving Cuba and establishing
+a Southern California roasting business. His children learned the coffee
+trade through the family's plantation experience, and the business
+continued as a family company. Pedro Gaviña emphasizes enjoying the work.
+
+The Southern California facility develops gourmet coffees and new
+coffee concepts. A training program teaches McDonald's employees
+brewing techniques. A department responsible for unroasted coffee
+focuses on sustainability and the welfare of farmers and land.
+
+Pedro characterizes coffee as central to the economies of more than
+50 countries and argues that safeguarding farming and land is
+essential to its future. The page presents quality, innovation,
+training, and sustainability as the supplier's priorities.
+
+Related cards link to Lopez Foods, Keystone Foods, and 100 Circle
+Farms. Further links lead to balanced choices and the supplier
+directory; repeated quality/variety cards share a message.
+
+======================================================================
+24. Hildebrandt Farms
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/dairy-hildebrandt-farms.html
+
+Heading outline: Dairy-family profile; Milking R Dairy; Gaviña coffee;
+Keystone Foods.
+
+Summary:
+The profile describes a four-generation dairy business on 1,800 acres
+just south of the Illinois-Wisconsin border. Ken and Amy Hildebrandt,
+with Ken's brother Don, operate the farm. Its milk supplies some
+McDonald's soft serve in Illinois and Wisconsin.
+
+The farm is described as having 800 cows, supported by a professional
+nutritionist and veterinarian. Milk reaches restaurants within
+approximately 150 miles of the farm. These operational numbers are
+presented without a specific reporting date.
+
+Related cards point to Milking R Dairy, Gaviña Gourmet Coffee,
+and Keystone Foods. Their brief captions connect this story to
+family dairy farming, coffee blending, and food-industry innovation.
+A return link leads to the supplier directory. The body specifically
+identifies soft-serve milk supply, although the directory introduces
+the farm more generally as a milk supplier.
+
+======================================================================
+25. Milking R Dairy
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/meet-our-suppliers/soft-serve-milking-r-dairy.html
+
+Heading outline: Dairy-family profile; Hildebrandt Farms; Gaviña coffee;
+Keystone Foods.
+
+Summary:
+Owner-operators Sutton and Kris Rucks continue a South Florida dairy
+tradition dating to the 1930s. Sutton, born in Okeechobee, began
+full-time milking after graduating from high school in 1986.
+
+The profile reports slightly more than 1,300 cows, milked twice daily,
+producing over 13,000 gallons of milk per day. Some of that milk goes
+into soft-serve products at McDonald's restaurants throughout Florida.
+Cows occupy open-air barns equipped with misting systems, large fans,
+and sand bedding.
+
+The next generation also works on the farm: daughter Lindsay assists
+with daily cow and replacement-heifer care, while son Garrett handles
+cattle, crop production, and maintenance. The story emphasizes continuity
+of family farming. Production figures have no explicit reporting year.
+
+Related cards link to Hildebrandt Farms, Gaviña Gourmet Coffee,
+and Keystone Foods, with a return link to the supplier directory.
+
+======================================================================
+26. Our Food. Your Questions.
+======================================================================
+URL: https://www.mcdonalds.com/us/en-us/about-our-food/our-food-your-questions1.html
+
+Heading outline: Food questions interface; question search; filtering;
+additional-results control.
+
+Summary:
+This additional page was found through web search rather than the
+landing page's main cards. The retrieved main content consists of
+a question-search interface, autocomplete instructions, a results
+indicator, filters, and a control for loading further results.
+
+Keyboard users navigate suggestions with arrows and Enter; touch users
+explore by touch or swipe. No substantive answer set or individual question
+list was exposed in the opened page's retrieved main text.
+
+Consequently, this entry documents the page and its purpose without
+claiming to summarize unseen answers. The currently linked question
+destination on other food pages is the general /us/en-us/faq.html
+page, which is outside this document's chosen boundary.
+
+======================================================================
+SHARED SITE ELEMENTS
+======================================================================
+
+Across the reviewed pages, navigation covers menu categories, ordering,
+the app, rewards, deals, delivery, gift cards, language selection,
+location search, and account-independent email signup. Footer groups
+cover company information, services, community programs, and contact
+options. These repeat across pages and are not separate food articles.
+
+General terms, privacy, external-link, and ordering notices also recur.
+
+======================================================================
+RELATED DESTINATIONS AND COVERAGE LIMITS
+======================================================================
+
+1. Product details
+   Food pages link to burger, nugget, apple, oatmeal, fish, egg, dairy,
+   coffee, and other product pages. These URLs sit under /product/ or
+   other menu paths, so their detailed ingredients and numeric nutrition
+   panels are not part of this path-bounded document.
+
+2. General food questions
+   https://www.mcdonalds.com/us/en-us/faq.html
+   Several cards lead to this general question interface. It falls outside
+   /about-our-food/. Individual FAQ answers were not recursively included.
+
+3. Corporate policy and reports
+   The quality page links to corporate discussions of antibiotics in
+   chicken, beef, and pork; sustainable beef; coffee sourcing; fish sourcing;
+   Happy Meal development; and purpose/impact reports. These are external
+   to the requested path. Their contents are not treated as additional
+   covered pages or evidence of updated achievement dates.
+
+4. Certification
+   The fish profile links to https://www.msc.org/ for certification information.
+   This external site was not included in the section review.
+
+5. Unretrievable candidates
+   An English counterpart to a Spanish Chef Caroline Morris profile could
+   not be retrieved at the corresponding /us/en-us/ URL. It was not listed
+   in the retrieved English chef directory, and no biography was inferred.
+   The attempted U.S. sitemap also did not return usable content.
+
+6. Dates and internal differences
+   A target date on a page does not establish current completion.
+   The chocolate-milk comparison figures differ between pages, as recorded
+   in the individual entries.
+   Supplier production statistics and interview claims usually lack a
+   publication date, so this review does not assign them a 2026 reporting year.
+
+END OF DOCUMENT
