@@ -50,8 +50,6 @@ class LiveCallManager:
                     "instructions": backend_instructions(self.settings),
                     "tools": self.tools.live_tool_schemas(),
                     "tool_choice": "auto",
-                    # Keeping this false makes custom tool-result handling simple and
-                    # prevents a response from waiting on multiple local functions.
                     "parallel_tool_calls": False,
                     "max_output_tokens": 700,
                 },
@@ -96,135 +94,175 @@ class LiveCallManager:
             ) as ws:
                 logger.info("Attached sideband to %s", session_id)
 
-                # Wait until OpenAI reports session.started before sending the
-                # proactive greeting. GPT-Live documents this ordering for callers
-                # that should hear the assistant speak before they say anything.
                 greeting_sent = False
 
-                async for raw_message in ws:
-                    event = json.loads(raw_message)
-                    event_type = event.get("type")
+                async def send_greeting(reason: str) -> None:
+                    nonlocal greeting_sent
 
-                    if (
-                        self.settings.greet_on_connect
-                        and not greeting_sent
-                        and event_type == "session.started"
-                    ):
-                        greeting_event_id = f"greeting_{uuid.uuid4().hex}"
+                    if greeting_sent or not self.settings.greet_on_connect:
+                        return
+
+                    greeting_sent = True
+                    greeting_event_id = f"greeting_{uuid.uuid4().hex}"
+
+                    await ws.send(
+                        json.dumps(
+                            {
+                                "type": "session.instructions.append",
+                                "event_id": greeting_event_id,
+                                "delegation_id": None,
+                                "content": (
+                                    f"Immediately speak first. Greet the caller now in English. "
+                                    f"Introduce yourself as the automated assistant for "
+                                    f"{self.settings.restaurant_name}, say you can help with "
+                                    f"questions about the food, and ask how you can help. "
+                                    f"Do not wait for the caller to say anything. "
+                                    f"After the greeting, pause and listen."
+                                ),
+                            }
+                        )
+                    )
+
+                    logger.info(
+                        "Sent proactive greeting instruction for Live session %s "
+                        "(reason=%s, event_id=%s)",
+                        session_id,
+                        reason,
+                        greeting_event_id,
+                    )
+
+                async def greeting_fallback() -> None:
+                    await asyncio.sleep(0.75)
+                    if not greeting_sent:
+                        await send_greeting("attach_fallback")
+
+                fallback_task: asyncio.Task | None = None
+                if self.settings.greet_on_connect:
+                    fallback_task = asyncio.create_task(greeting_fallback())
+
+                try:
+                    async for raw_message in ws:
+                        event = json.loads(raw_message)
+                        event_type = event.get("type")
+
+                        if (
+                            self.settings.greet_on_connect
+                            and not greeting_sent
+                            and event_type == "transport.answered"
+                        ):
+                            await send_greeting("transport.answered")
+                            continue
+
+                        if (
+                            self.settings.greet_on_connect
+                            and not greeting_sent
+                            and event_type == "session.started"
+                        ):
+                            await send_greeting("session.started")
+                            continue
+
+                        if event_type == "session.instructions.appended":
+                            client_event_id = event.get("client_event_id", "")
+                            if client_event_id.startswith("greeting_"):
+                                logger.info(
+                                    "Proactive greeting instruction accepted for %s",
+                                    session_id,
+                                )
+
+                        if event_type == "session.closed":
+                            logger.info("GPT-Live session closed: %s", session_id)
+                            break
+
+                        if event_type == "transport.failed":
+                            logger.error(
+                                "GPT-Live transport failed for %s: %s",
+                                session_id,
+                                json.dumps(event, ensure_ascii=False)[:4000],
+                            )
+                            continue
+
+                        if event_type == "error":
+                            logger.error(
+                                "GPT-Live sideband error for %s: %s",
+                                session_id,
+                                json.dumps(event, ensure_ascii=False)[:4000],
+                            )
+                            continue
+
+                        if self.settings.log_transcripts and event_type in {
+                            "session.input_transcript.delta",
+                            "session.output_transcript.delta",
+                        }:
+                            logger.info(
+                                "%s %s: %s",
+                                session_id,
+                                event_type,
+                                event.get("delta", ""),
+                            )
+
+                        if event_type != "response.event":
+                            continue
+
+                        nested = event.get("event") or {}
+                        if nested.get("type") != "response.output_item.done":
+                            continue
+
+                        item = nested.get("item") or {}
+                        if item.get("type") != "function_call":
+                            continue
+
+                        call_id = item.get("call_id")
+                        tool_name = item.get("name")
+                        arguments_json = item.get("arguments", "{}")
+
+                        if not call_id or not tool_name:
+                            logger.warning("Malformed function-call item: %s", item)
+                            continue
+
+                        if call_id in processed_tool_call_ids:
+                            continue
+                        processed_tool_call_ids.add(call_id)
+
+                        logger.info(
+                            "Executing tool %s for Live session %s",
+                            tool_name,
+                            session_id,
+                        )
+
+                        output = await self.tools.execute_json(
+                            name=tool_name,
+                            arguments_json=arguments_json,
+                        )
+
                         await ws.send(
                             json.dumps(
                                 {
-                                    "type": "session.instructions.append",
-                                    "event_id": greeting_event_id,
-                                    "delegation_id": None,
-                                    "content": (
-                                        f"Greet the caller now in English. Introduce yourself "
-                                        f"as the automated assistant for "
-                                        f"{self.settings.restaurant_name}, say you can help "
-                                        f"with questions about the food, and ask how you can "
-                                        f"help. Speak first without waiting for the caller to "
-                                        f"say anything. Then pause and listen."
-                                    ),
+                                    "type": "response.item.create",
+                                    "event_id": f"tool_result_{uuid.uuid4().hex}",
+                                    "item": {
+                                        "type": "function_call_output",
+                                        "call_id": call_id,
+                                        "output": output,
+                                    },
                                 }
                             )
                         )
-                        greeting_sent = True
-                        logger.info(
-                            "Sent proactive greeting instruction for Live session %s",
-                            session_id,
-                        )
-                        continue
 
-                    if event_type == "session.instructions.appended":
-                        client_event_id = event.get("client_event_id", "")
-                        if client_event_id.startswith("greeting_"):
-                            logger.info(
-                                "Proactive greeting instruction accepted for %s",
-                                session_id,
+                        await ws.send(
+                            json.dumps(
+                                {
+                                    "type": "response.create",
+                                    "event_id": f"continue_{uuid.uuid4().hex}",
+                                }
                             )
-
-                    if event_type == "session.closed":
-                        logger.info("GPT-Live session closed: %s", session_id)
-                        break
-
-                    if event_type == "error":
-                        logger.error(
-                            "GPT-Live sideband error for %s: %s",
-                            session_id,
-                            json.dumps(event, ensure_ascii=False)[:4000],
                         )
-                        continue
-
-                    if self.settings.log_transcripts and event_type in {
-                        "session.input_transcript.delta",
-                        "session.output_transcript.delta",
-                    }:
-                        logger.info(
-                            "%s %s: %s",
-                            session_id,
-                            event_type,
-                            event.get("delta", ""),
+                finally:
+                    if fallback_task is not None:
+                        fallback_task.cancel()
+                        await asyncio.gather(
+                            fallback_task,
+                            return_exceptions=True,
                         )
-
-                    if event_type != "response.event":
-                        continue
-
-                    nested = event.get("event") or {}
-                    if nested.get("type") != "response.output_item.done":
-                        continue
-
-                    item = nested.get("item") or {}
-                    if item.get("type") != "function_call":
-                        continue
-
-                    call_id = item.get("call_id")
-                    tool_name = item.get("name")
-                    arguments_json = item.get("arguments", "{}")
-
-                    if not call_id or not tool_name:
-                        logger.warning("Malformed function-call item: %s", item)
-                        continue
-
-                    # Sideband/replay safety: execute each function call once.
-                    if call_id in processed_tool_call_ids:
-                        continue
-                    processed_tool_call_ids.add(call_id)
-
-                    logger.info(
-                        "Executing tool %s for Live session %s",
-                        tool_name,
-                        session_id,
-                    )
-
-                    output = await self.tools.execute_json(
-                        name=tool_name,
-                        arguments_json=arguments_json,
-                    )
-
-                    await ws.send(
-                        json.dumps(
-                            {
-                                "type": "response.item.create",
-                                "event_id": f"tool_result_{uuid.uuid4().hex}",
-                                "item": {
-                                    "type": "function_call_output",
-                                    "call_id": call_id,
-                                    "output": output,
-                                },
-                            }
-                        )
-                    )
-
-                    # Explicitly resume the delegated Responses backend after the tool
-                    # result is supplied.
-                    await ws.send(
-                        json.dumps(
-                            {
-                                "type": "response.create",
-                                "event_id": f"continue_{uuid.uuid4().hex}",
-                            }
-                        )
-                    )
 
         except ConnectionClosed as exc:
             logger.info(
