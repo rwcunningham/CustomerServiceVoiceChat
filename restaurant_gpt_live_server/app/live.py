@@ -96,29 +96,52 @@ class LiveCallManager:
             ) as ws:
                 logger.info("Attached sideband to %s", session_id)
 
-                # An attached sideband belongs to an already-running session; don't send
-                # session.start. We can immediately append a one-time greeting request.
-                if self.settings.greet_on_connect:
-                    await ws.send(
-                        json.dumps(
-                            {
-                                "type": "session.instructions.append",
-                                "event_id": f"greeting_{uuid.uuid4().hex}",
-                                "delegation_id": None,
-                                "content": (
-                                    f"Greet the caller now in English. Introduce yourself "
-                                    f"as the automated assistant for "
-                                    f"{self.settings.restaurant_name}, say you can help "
-                                    f"with questions about the food, and ask how you can "
-                                    f"help. Then pause and listen."
-                                ),
-                            }
-                        )
-                    )
+                # Wait until OpenAI reports session.started before sending the
+                # proactive greeting. GPT-Live documents this ordering for callers
+                # that should hear the assistant speak before they say anything.
+                greeting_sent = False
 
                 async for raw_message in ws:
                     event = json.loads(raw_message)
                     event_type = event.get("type")
+
+                    if (
+                        self.settings.greet_on_connect
+                        and not greeting_sent
+                        and event_type == "session.started"
+                    ):
+                        greeting_event_id = f"greeting_{uuid.uuid4().hex}"
+                        await ws.send(
+                            json.dumps(
+                                {
+                                    "type": "session.instructions.append",
+                                    "event_id": greeting_event_id,
+                                    "delegation_id": None,
+                                    "content": (
+                                        f"Greet the caller now in English. Introduce yourself "
+                                        f"as the automated assistant for "
+                                        f"{self.settings.restaurant_name}, say you can help "
+                                        f"with questions about the food, and ask how you can "
+                                        f"help. Speak first without waiting for the caller to "
+                                        f"say anything. Then pause and listen."
+                                    ),
+                                }
+                            )
+                        )
+                        greeting_sent = True
+                        logger.info(
+                            "Sent proactive greeting instruction for Live session %s",
+                            session_id,
+                        )
+                        continue
+
+                    if event_type == "session.instructions.appended":
+                        client_event_id = event.get("client_event_id", "")
+                        if client_event_id.startswith("greeting_"):
+                            logger.info(
+                                "Proactive greeting instruction accepted for %s",
+                                session_id,
+                            )
 
                     if event_type == "session.closed":
                         logger.info("GPT-Live session closed: %s", session_id)
